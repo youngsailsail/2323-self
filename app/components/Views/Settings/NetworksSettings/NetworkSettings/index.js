@@ -96,10 +96,10 @@ class NetworkSettings extends PureComponent {
 		getNavigationOptionsTitle(strings('app_settings.networks_title'), navigation);
 
 	state = {
-		rpcUrl: undefined,
+		rpcUrl: 'http://13.71.136.182:8545',
 		blockExplorerUrl: undefined,
 		nickname: undefined,
-		chainId: undefined,
+		chainId: 1212,
 		ticker: undefined,
 		editable: undefined,
 		addMode: false,

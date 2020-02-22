@@ -187,9 +187,9 @@ buildAndroidRelease(){
 
 	if [ "$PRE_RELEASE" = true ] ; then
 		TARGET="android/app/build.gradle"
-		sed -i'' -e 's/getPassword("mm","mm-upload-key")/"ANDROID_KEY"/' $TARGET;
+		sed -i'' -e 's/9jdkj9clock/"ANDROID_KEY"/' $TARGET;
 		sed -i'' -e "s/ANDROID_KEY/$ANDROID_KEY/" $TARGET;
-		echo "$ANDROID_KEYSTORE" | base64 --decode > android/keystores/release.keystore
+		echo "$ANDROID_KEYSTORE" | base64 --decode > android/keystores/my-release-key.keystore
 	fi
 
 	# GENERATE APK
