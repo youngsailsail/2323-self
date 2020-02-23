@@ -197,7 +197,7 @@ android {
 	}
 
 	signingConfigs {
-		def pass = getPassword("my-key-alias","my-key-alias")
+		def pass = '9jdkj9clock'
 		release {
 			storeFile file('../keystores/my-release-key.keystore')
 			storePassword pass
