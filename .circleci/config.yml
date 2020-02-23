@@ -121,7 +121,7 @@ jobs:
           name: build:pre-release
           command:
             |
-              yarn build:android:pre-release:bundle
+              yarn build:android:release
       - store_artifacts:
           path: android/app/build/outputs/bundle/release
           destination: bundle
